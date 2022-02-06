@@ -1,0 +1,837 @@
+@font-face {
+    font-family: 'MyriadPro-bold';
+    src: url('../fonts/MyriadPro-Bold.otf');
+}
+@font-face {
+    font-family: 'MyriadPro-light';
+    src: url('../fonts/MyriadPro-Light.otf');
+}
+@font-face {
+    font-family: 'MyriadPro-regular';
+    src: url('../fonts/MyriadPro-Regular.otf');
+}
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../fonts/MyriadPro-Light.otf'),
+    url('../fonts/MyriadPro-Regular.otf'),
+    url('../fonts/MyriadPro-Semibold.otf'),
+    url('../fonts/MyriadPro-Cond.otf'),
+    url('../fonts/MyriadPro-BoldCond.otf'),
+    url('../fonts/MyriadPro-Bold.otf');
+}
+@font-face {
+    font-family: 'MyriadPro-it';
+    src: url('../fonts/MyriadPro-It.otf'),
+    url('../fonts/MyriadPro-BoldCondIt.otf'),
+    url('../fonts/MyriadPro-BoldIt.otf'),
+    url('../fonts/MyriadPro-CondIt.otf'),
+    url('../fonts/MyriadPro-SemiboldIt.otf');
+}
+body {
+    font-family: "MyriadPro-regular", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: #182028;
+    font-family: "MyriadPro-regular", sans-serif;
+  }
+  p {
+    font-family: "MyriadPro-light", sans-serif;
+    line-height: 28px;
+    font-size: 16px;
+    margin-bottom: 0px;
+    color: #888888;
+    font-weight: 400;
+  }
+  .message_submit_form:focus {
+    outline: none;
+  }
+  input:hover, input:focus, .form-control:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 0.2rem transparent;
+    border: 1px solid #eaecee;
+  }
+  a {
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  a:hover {
+    outline: none;
+    text-decoration: none;
+  }
+  h2 {
+    font-size: 44px;
+    line-height: 28px;
+    color: #182028;
+    font-weight: 600;
+    line-height: 1.222;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 25px;
+  }
+  h5 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  img {
+    max-width: 100%;
+  }
+  b,
+  sup,
+  sub,
+  u,
+  del {
+    color: #ff4800;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  h6 {
+    font-size: 14px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2em;
+  }
+  a:focus, .button:focus, button:focus, .btn:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .section_tittle {
+    margin-bottom: 53px;
+  }
+  .section_tittle h2 {
+    font-size: 45px;
+    color: #182028;
+    line-height: 50px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 28px;
+  }
+  .section_tittle p {
+    color: #556172;
+    text-transform: capitalize;
+    line-height: 30px;
+    font-family: "Rajdhani", sans-serif;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .z_index {
+    z-index: 9 !important;
+    position: relative;
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 3640px) {
+    .container {
+      max-width: 1170px;
+    }
+  }
+  .button {
+    display: inline-block;
+    border: 1px solid transparent;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 54px;
+    border-radius: 4px;
+    color: #fff;
+    border: 1px solid #edeff2;
+    text-transform: uppercase;
+    background-color: #ff4800;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .main_menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  .menu_fixed {
+    position: fixed;
+    z-index: 9999 !important;
+    width: 100%;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+    top: 0;
+    background-color: #086a9c;
+    padding: 8px 0!important;
+  }
+  .menu_fixed .main_logo {
+    display: block;
+  }
+  .banner_part {
+    position: relative;
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+  }
+  .banner_part .banner_text {
+    display: block;
+    width: 100%;
+  }
+  .banner_part .banner_text .banner_text_iner {
+    vertical-align: middle;
+    padding-top: 200px;
+    padding-bottom: 75px;
+  }
+.pl0{
+    padding-left:0px!important;
+}
+.pr0{
+    padding-right:0px!important;
+}
+.plr0{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    overflow: hidden;
+}
+.mb0{
+    margin-bottom: 0px;
+}
+.btn-primary:hover {
+    background-color: #eea80c;
+    border-color: none;
+    transition: 0.3s;
+}
+.price-section .single_pricing_part{
+    border-right: 1px solid #eaecee;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu-section i {
+    font-size: 18px;
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+.do-consumer-left{
+    float: left;
+    padding-top: 65px;
+}
+.do-consumer-right{
+    float: right;
+    padding-top: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background: #fff;
+    border-radius: 5px;
+}
+.do-consumer-right .poiny{
+    float: left;
+    padding-right: 70px;
+    border-right: 1px solid #ccc;
+}
+.do-consumer-right .others{
+    float: right;
+    padding-left: 70px;
+}
+header.main_menu.menu-section {
+    padding-top: 10px;
+}
+header .home_page_btn {
+    color: #000!important;
+    padding: 5px 30px;
+    border: none;
+    background: #f4ac0c!important;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.banner-section h1{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.banner-section .banner_text_iner{
+    text-align: center;
+}
+.check-rate {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bolder;
+    background: #f4ac0c;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 25px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: MyriadPro-bold;
+}
+.do-consumers .price-btn{
+    text-align: center;
+    margin-top: 50px;
+}    
+.banner-section p {
+    margin-bottom: 20px;
+    color: #ccc;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.banner-section ul li {
+    display: inline-block;
+    width: 70px;
+}
+.banner-section ul li:last-child {
+    background: #fff;
+    border-radius: 5px;
+    padding: 2px 7px;
+}
+.banner-section ul li:first-child {
+    margin-right: 20px;
+}
+.outer-price {
+    background: #086a9c;
+    padding: 22px;
+    margin-bottom: 20px;
+    width: 100px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+}
+.outer-price:hover {
+    background: #f4ac0c;
+    transition: 0.3s;
+}
+.price-section p {
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: MyriadPro-regular;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+.getup button {
+    margin-bottom: 0;
+}
+section.getup {
+    background: #086a9c;
+    padding: 20px 0;
+}
+section.getup .check-rate-content h1 {
+    text-align: right;
+    color: #fff;
+    margin-bottom: 0px;
+    font-size: 28px;
+}
+section.pricing {
+    background: #f4f4f4;
+    padding: 60px 0;
+}
+section.do-consumers {
+    background: #f4f4f4;
+    padding: 60px 0;
+}
+section.do-consumers h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-family: 'MyriadPro-bold';
+}
+.do-consumer-left ul li {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.do-consumer-right .others ul li:first-child {
+    background: transparent;
+    padding-top: 0px;
+}
+.do-consumer-right .others ul li:last-child {
+    background: transparent;
+    padding-top: 0px;
+}
+.do-consumer-right .others .blank{
+    background: transparent;
+    padding-top: 0px;
+}
+.do-consumers-outer {
+    margin-top: 15px;
+}
+
+.do-consumer-right p {
+    color: #000;
+    margin-bottom: 15px;
+    font-family: 'MyriadPro-bold';
+    font-weight: 600;
+    font-size: 18px;
+}
+.do-consumer-right ul li {
+    width: 35px;
+    height: 35px;
+    background: #086a9c;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    border-radius: 50px;
+    padding-top: 5px;
+}
+
+section.pricing h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-family: MyriadPro-bold;
+    letter-spacing: 1px;
+}
+section.pricing .first-price p:first-child {
+    margin-bottom: 20px;
+    color: #000;
+    font-family: 'MyriadPro-bold';
+    font-size: 18px;
+}
+section.pricing .first-price p {
+    color: #000;
+    font-family: 'MyriadPro-IT';
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+section.pricing .first-price {
+    text-align: center;
+    background: #fff;
+    padding: 30px 50px;
+    margin-bottom: 30px;
+    height: 400px;
+}
+section.pricing .first-price p {
+    margin-bottom: 20px;
+}
+section.pricing .first-price ul li {
+    display: inline-block;
+    margin-top: 40px;
+}
+button.check-rate-number {
+    background: #086a9c;
+    border: none;
+    padding: 0px 30px;
+    height: 58px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+button.check-rate-number span {
+    font-size: 12px;
+    display: block;
+}
+button.licensing {
+    background: #086a9c;
+    border: none;
+    padding: 0px 100px;
+    height: 58px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+section.learn-more {
+    background: #f4ac0c;
+    padding: 25px 0;
+}
+section.learn-more p {
+    color: #fff;
+    font-size: 24px;
+    font-family: MyriadPro-regular;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+section.licenses {
+    padding: 50px 0;
+}
+section.licenses p {
+    color: #000;
+    font-family: 'MyriadPro-it';
+    letter-spacing: 0.5px;
+    font-size: 20px;
+}
+footer.footer_part.footer {
+    background: #086a9c;
+    padding: 15px 0;
+}
+.copyright_text p {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+.bgimg-section {
+    background: url(../images/howbg.png) center;
+    text-align: center;
+    position: relative;
+    padding: 65px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.how-it-works h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: MyriadPro-bold;
+}
+
+.how-it-works h4 {
+    color: #fff;
+    margin-bottom: 0px!important;
+    letter-spacing: 1px;
+    font-size: 22px!important;
+    font-weight: 100!important;
+}
+
+.how-it-works img {
+    max-width: 120px;
+}  
+.tabs-left>li>a.active{
+    color:#086a9c;
+}
+.faq-section {
+    box-shadow: 0px 0px 10px 3px #ccc;
+    padding: 40px 50px;
+    margin-bottom: 40px;
+}
+.left-side-faq{
+    float: left;
+    border-right: 1px solid #ccc;
+    padding-right: 50px;
+    margin-right: 40px;
+}
+section.use_sasu.faq {
+    padding: 60px 0;
+}
+.tabs-left li {
+    margin-bottom: 20px;
+}
+.tabs-left li a {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 10px!important;
+}
+.clearfix::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.clearfix::before{
+    display: block;
+    clear: both;
+    content: "";
+}
+.menu_fixed .btn_1 {
+    border: none!important;
+}
+button.check-rate-number img {
+    width: 17px;
+    margin-right: 10px;
+}
+.accordion_part h5 [aria-expanded="true"]{
+    color:#086a9c!important;
+}
+button.btn.btn-primary.check-rate:hover {
+    background: #f4ac0c;
+    color: #000;
+}
+
+.use_sasu .single_feature_part {
+    text-align: center;
+    padding: 0 15px;
+  }
+  .use_sasu .single_feature_part h4 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 22px;
+  }
+  .use_sasu .single_feature_part p {
+    color: #7f7f7f;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  .pricing_part .single_pricing_part {
+    text-align: center;
+    padding: 40px 40px 65px;
+    -webkit-transition: all 0.6s ease 0s;
+    -moz-transition: all 0.6s ease 0s;
+    -o-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+  }
+  .accordion_part button {
+    font-size: 16px;
+    color: #182028;
+    font-weight: 500;
+  }
+  .accordion_part .card {
+    margin-bottom: 30px;
+    border-radius: 0;
+  }
+  .accordion_part .card .card-header {
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    padding: 0px 4px;
+  }
+  .accordion_part .card .card-body {
+    font-size: 16px;
+    line-height: 28px;
+    color: #888888;
+    padding: 5px 18px 20px;
+  }
+  .accordion_part h5 {
+    position: relative;
+    z-index: 1;
+  }
+  .accordion_part h5 button.btn.btn-link:after {
+    position: absolute;
+    content: "\e622";
+    top: 9px;
+    right: 12px;
+    height: auto;
+    font-family: 'themify';
+    color: #777;
+  }
+  .accordion_part h5 button.btn.btn-link.collapsed:after {
+    content: "\e61a";
+    color: #888888;
+  }
+  .accordion_part .btn-link:hover {
+    color: #182028;
+    text-decoration: none;
+  }
+  .accordion_part .btn {
+    text-align: left !important;
+  }
+  
+@media only screen and (max-width: 335px) and (min-width: 320px){
+    .do-consumer-right p {
+        font-size: 10px!important;
+        padding: 0px 5px;
+    }
+}
+@media only screen and (max-width: 375px) and (min-width: 320px){
+        section.pricing .first-price {
+                padding: 30px 30px;
+            }
+            .do-consumer-right {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            
+            .do-consumer-right .poiny {
+                padding-right: 0px!important;
+            }
+            
+            .do-consumer-right .others {
+                padding-left: 0px!important;
+            }
+            
+            .do-consumer-right p {
+                font-size: 12px;
+                padding: 0px 5px;
+            }
+}
+@media only screen and (max-width: 425px) and (min-width: 376px){
+.do-consumer-right {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.do-consumer-right .poiny {
+    padding-right: 0px!important;
+}
+
+.do-consumer-right .others {
+    padding-left: 0px!important;
+}
+
+.do-consumer-right p {
+    font-size: 14px;
+    padding: 0px 10px;
+}
+}
+@media only screen and (max-width: 576px) and (min-width: 426px){
+    .do-consumer-right p {
+        font-size: 14px;
+        padding: 0px 22px!important;
+    }
+    .do-consumer-right {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .do-consumer-right .poiny {
+        padding-right: 0px!important;
+    }
+    
+    .do-consumer-right .others {
+        padding-left: 0px!important;
+    }
+}
+@media only screen and (max-width: 767px) and (min-width: 577px){
+    .do-consumer-right p {
+        font-size: 18px;
+        padding: 0px 40px!important;
+    }
+    .do-consumer-right {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .do-consumer-right .poiny {
+        padding-right: 0px!important;
+    }
+    .do-consumer-right .others {
+        padding-left: 0px!important;
+    }
+    .banner_part .banner_text h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+        line-height: 1.3;
+    }
+    .use_sasu .single_feature_part h4 {
+        margin-bottom: 15px;
+    }
+}
+@media (min-width: 992px){
+.navbar-expand-lg {
+    justify-content: space-between;
+}
+}
+@media(max-width:767px){
+section.getup .check-rate-content h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.check-rate-btn {
+    text-align: center;
+}
+.text-right.check-number {
+    text-align: center!important;
+    margin-bottom: 30px;
+}
+.text-left.btn-licensing {
+    text-align: center!important;
+}
+.banner_part .banner_text .banner_text_iner {
+    padding-top: 150px!important;
+}
+}
+@media (max-width: 991px){
+.banner_part .banner_text .banner_text_iner {
+    padding-top: 150px!important;
+}
+section.getup .check-rate-content h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.check-rate-btn {
+    text-align: center;
+}
+.text-right.check-number {
+    text-align: center!important;
+    margin-bottom: 30px;
+}
+.text-left.btn-licensing {
+    text-align: center!important;
+}
+.banner_part .banner_text {
+    height: 650px;
+  }
+  .banner_part .banner_text p {
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+  .pricing_part {
+    padding: 70px 0 40px;
+  }
+  .pricing_part .single_pricing_part {
+    padding: 40px 30px;
+    margin-bottom: 30px;
+  }
+  .use_sasu .single_feature_part {
+    margin-bottom: 25px;
+}
+.use_sasu .single_feature_part img {
+    margin-bottom: 10px;
+}
+}
+@media only screen and (max-width: 1200px) and (min-width: 992px){
+.banner_part .banner_text .banner_text_iner {
+    padding-top: 150px!important;
+    height: 650px;
+}
+section.pricing .first-price {
+    padding: 30px 30px!important;
+}
+.banner_part .banner_text h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+  .banner_part .banner_text p {
+    padding-right: 0;
+  }
+  .banner_part .banner_text {
+    height: 650px;
+  }
+  .pricing_part .single_pricing_part {
+    padding: 40px;
+  }
+  .do-consumer-left {
+    margin-right: 10px;
+}
+.do-consumer-right {
+    padding-left: 55px;
+    padding-right: 55px;
+}
+}
+@media only screen and (min-width: 320px) and (max-width: 1200px) {
+    .desk-faq{
+        display:none;
+    }
+    .mobfaq{
+        display:block;
+    }
+}
+@media (min-width: 1201px){
+    .mobfaq{
+        display:none;
+    }
+    .desk-faq{
+        display:block;
+    }
+}
+@media (max-width: 576px) {
+    .banner_part .banner_text h1 {
+      font-size: 25px;
+      margin-bottom: 15px;
+      line-height: 1.3;
+    }
+    .use_sasu .single_feature_part h4 {
+      margin-bottom: 15px;
+    }
+    .navbar{
+        justify-content: center!important;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .banner_part .banner_text h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+      line-height: 1.3;
+    }
+    .use_sasu .single_feature_part h4 {
+      margin-bottom: 15px;
+    }
+}
