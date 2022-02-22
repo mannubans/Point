@@ -806,10 +806,10 @@ section.pricing .first-price {
 }
 @media (min-width: 1201px){
     .mobfaq{
-        display:none;
+        display:block;
     }
     .desk-faq{
-        display:block;
+        display:none;
     }
 }
 @media (max-width: 576px) {
